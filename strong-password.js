@@ -1,3 +1,18 @@
+/*
+A strong password meets the following criteria:
+
+Its length is at least 6.
+It contains at least one digit.
+It contains at least one lowercase English character.
+It contains at least one uppercase English character.
+It contains at least one special character. The special characters are: !@#$%^&*()-+
+
+Return the minimum requirements to fulfill a strong password given n for the length of input and password as the string.
+minimumNumber(n, password);
+
+*/
+
+
 function isALetter(char) {
     if( char.toUpperCase() != char.toLowerCase() )
        return true;
