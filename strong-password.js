@@ -13,11 +13,10 @@ minimumNumber(n, password);
 */
 
 
-function isALetter(char) {
-    if( char.toUpperCase() != char.toLowerCase() )
-       return true;
-    else
-       return false;
+function isLetter(char) {
+    if( char.toUpperCase() !== char.toLowerCase() ) {
+        return true;
+    } else return false;
 }
 
 function minimumNumber(n, password) {
@@ -33,12 +32,12 @@ function minimumNumber(n, password) {
     
     for (var i = 0; i < password.length; i++) {
         /* Is there at least one uppercase letter? */
-        if (isALetter(password.charAt(i)) && password.charAt(i) === password.charAt(i).toUpperCase()) {
+        if (isLetter(password.charAt(i)) && password.charAt(i) === password.charAt(i).toUpperCase()) {
             requiredChars[0] = true;
         } 
         
         /* Is there at least one lowercase letter? */
-        if (isALetter(password.charAt(i)) && password.charAt(i) === password.charAt(i).toLowerCase()) {
+        if (isLetter(password.charAt(i)) && password.charAt(i) === password.charAt(i).toLowerCase()) {
             requiredChars[1] = true;
         } 
         
