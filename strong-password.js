@@ -7,7 +7,7 @@ It contains at least one lowercase English character.
 It contains at least one uppercase English character.
 It contains at least one special character. The special characters are: !@#$%^&*()-+
 
-Return the minimum requirements to fulfill a strong password given n for the length of input and password as the string.
+Return the minimum number of characters to add that fulfills the strong password criteria given n for the length of input and password as the string.
 minimumNumber(n, password);
 
 */
