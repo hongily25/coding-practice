@@ -20,14 +20,15 @@ function isLetter(char) {
 }
 
 function minimumNumber(n, password) {
+    const PASSWORD_LENGTH_MIN = 6;
     var lengthNeeded = 0;
     var charsNeeded = 0;
     /* requiredChars is an array of flags: [hasUppercase, hasLowercase, hasNumber, hasSpecialChar]. False means the required chars are missing. */
     var requiredChars = [false, false, false, false];
     
     /* n is password length which needs to be at least 6 chars */
-    if (n < 6) {
-        lengthNeeded = 6 - n;
+    if (n < PASSWORD_LENGTH_MIN) {
+        lengthNeeded = PASSWORD_LENGTH_MIN - n;
     } 
     
     for (var i = 0; i < password.length; i++) {
